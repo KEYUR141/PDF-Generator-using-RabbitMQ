@@ -2,7 +2,7 @@
 
 <h1>PDF-Generator-using-RabbitMQ</h1>
 <div class="First Step">
-  <h2>1:Introduction</h2>
+  <h2> 1: Introduction</h2>
   <p>
   This project is a simple yet effective web-based data submission and processing system built using <strong>Django</strong> and <strong>RabbitMQ</strong>. 
   The primary goal of this project is to demonstrate how asynchronous task queues can be integrated into web applications to handle time-consuming operations in the background.
@@ -141,7 +141,7 @@ This publisher-consumer design ensures that PDF generation runs asynchronously a
 
 
 <div class="Third Step">
-  <h2>🖥️ 3:Handling Form Submission in Django (views.py)</h2>
+  <h2>🖥️ 3: Handling Form Submission in Django (views.py)</h2>
 
 <p>
 This view handles the form data submitted by the user through a web interface. Once the user submits the form, the data is collected and passed to the <code>publish_message</code> function, which sends it to RabbitMQ for background processing.
@@ -286,21 +286,21 @@ This is the front-end template where users can input their academic details. It 
   <li>Two <code>&lt;select&gt;</code> dropdowns are used for <strong>semester</strong> and <strong>year</strong>.</li>
   <li>The form is styled with CSS and Bootstrap to create a modern and centered layout.</li>
 </ul>
- <img src='IMDB_Original.png' width='800'>
+ <img src='FORM_UI_RABBITMQ.png' width='800'>
  <p>4.1.Image of the Form UI</p>
 </div>
 
 <div class="Fifth Step">
-  <h2>5.Output</h2>
-  <img src='IMDB_Original.png' width='800'>
+  <h2>5 : Output</h2>
+  <img src='PDF_RabbitMQ2.png' width='800'>
   <p>5.1.The Publisher publishing data</p>
 
-  <img src='IMDB_Original.png' width='800'>
+  <img src='PDF_RabbitMQ.png' width='800'>
   <p>5.2.The Consumer listening to the messages and creating PDF through given data</p>
 </div>
 
 <div class="Sixth Step">
-  <h2>✅ 6.Conclusion</h2>
+  <h2>✅ 6: Conclusion</h2>
 <p>
 This project demonstrates how to efficiently handle user-submitted data using asynchronous message processing with RabbitMQ and Django. By decoupling the data collection and processing logic, the system ensures smooth performance, better scalability, and an improved user experience. It serves as a practical example of integrating real-time web applications with background task queues to manage long-running operations like PDF generation.
 </p>
